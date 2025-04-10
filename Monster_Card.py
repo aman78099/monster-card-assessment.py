@@ -267,7 +267,7 @@ def edit_cards(cards):
     #   This will loop untill the user finally adds the right power for the trait they pick
     while True:
         try:
-            new_price = int(easygui.enterbox(f"Enter the new price for {item_to_modify}:"))
+            new_price = int(easygui.enterbox(f"Enter the new power level for {item_to_modify}:"))
             if new_price < 0 or new_price > 25:
                 easygui.msgbox("Not vaild! please try agian")
                 continue
